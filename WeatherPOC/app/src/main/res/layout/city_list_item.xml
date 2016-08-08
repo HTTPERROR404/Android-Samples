@@ -1,0 +1,25 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="java.lang.Integer"/>
+        <variable
+                name="cityname"
+                type="com.neji.weatherpoc.data.model.City"/>
+    </data>
+<RelativeLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+    <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            tools:text="abc"
+            android:text="@{cityname.city}"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+    />
+</RelativeLayout>
+    </layout>

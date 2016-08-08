@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".cityselection.CitySelectionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_blank_fragment"
+            android:id="@+id/tvEnterCity"
+            android:layout_margin="5dp"
+            android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+        <EditText android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/etCityInput"
+                  android:layout_toRightOf="@+id/tvEnterCity" android:layout_marginLeft="5dp"
+                  android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+                  android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/btnAddCity"
+        android:layout_below="@+id/etCityInput"
+                android:layout_margin="5dp"
+        android:layout_centerHorizontal="true" android:text="@string/btn_add_city"/>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/btnShowWeather"
+                android:layout_below="@+id/btnAddCity"
+                android:layout_centerHorizontal="true" android:text="@string/btn_show_forecast"/>
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView" android:layout_gravity="center"
+            android:layout_below="@+id/btnShowWeather" android:layout_alignLeft="@+id/tvEnterCity"
+            android:layout_alignStart="@+id/tvEnterCity" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+</FrameLayout>
